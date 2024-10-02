@@ -4,6 +4,8 @@ const btn = document.getElementById("search-btn");
 
 btn.addEventListener("click", () => {
   let inpWord = document.getElementById("inp-word").value;
+  result.innerHTML = `<p class="loading">Loading...</p>`; // Show loading message
+
   fetch(`${url}${inpWord}`)
     .then((response) => response.json())
     .then((data) => {
