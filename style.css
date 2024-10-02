@@ -54,6 +54,10 @@ body {
   border-radius: 5px;
 }
 
+.search-box button:hover {
+  cursor: pointer;
+}
+
 .result {
   position: relative;
 }
